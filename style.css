@@ -241,3 +241,76 @@ body { font-family: 'Inter', sans-serif; color: var(--text-main); background: va
     font-size: 0.95rem;
     color: var(--text-main);
 }
+/* --- RESPONSIVE OVERRIDES --- */
+
+/* Mobile Menu Toggle - Hidden on Desktop */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+}
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: var(--primary);
+    border-radius: 2px;
+}
+
+/* Tablet & Mobile Adjustments */
+@media (max-width: 968px) {
+    /* Navbar */
+    .navbar { padding: 15px 5%; }
+    .nav-links { 
+        display: none; /* Can be toggled with 'display: flex' via JS */
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 20px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        text-align: center;
+    }
+    .menu-toggle { display: flex; }
+
+    /* Layout Grids */
+    .hero, .about-grid, .split-view, .contact-wrapper, .ecom-grid {
+        flex-direction: column !important;
+        display: flex !important;
+        grid-template-columns: 1fr !important;
+        text-align: center;
+        padding: 40px 5%;
+    }
+    
+    .hero { min-height: auto; }
+    .hero h1 { font-size: 2.2rem; }
+    .hero p { max-width: 100%; }
+    
+    .reverse { flex-direction: column !important; }
+    
+    /* Elements */
+    .visual-side, .text-side, .hero-content { width: 100%; flex: none; }
+    .hero-btns { display: flex; flex-direction: column; gap: 10px; }
+    .btn-secondary { margin-left: 0; }
+    
+    .pos-features { grid-template-columns: 1fr; }
+    
+    /* Contact Form */
+    #demo-form { flex-direction: column; width: 100%; }
+    #demo-form input { width: 100%; }
+    
+    /* Sections */
+    .dashboard-preview, .pos-section, .ecom-section, .why-us, .about-section {
+        padding: 60px 5% !important;
+    }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+    .hero h1 { font-size: 1.8rem; }
+    .card, .contact-card { padding: 30px 20px; }
+    .ecom-main-card { padding: 20px; }
+    .store-preview { flex-direction: column; }
+}
