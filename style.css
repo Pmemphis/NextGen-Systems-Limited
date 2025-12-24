@@ -1,0 +1,243 @@
+:root {
+    --primary: #0A2540; /* Navy */
+    --accent: #00D1B2;  /* Teal */
+    --text-main: #425466;
+    --bg-light: #F6F9FC;
+    --white: #ffffff;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; color: var(--text-main); background: var(--bg-light); line-height: 1.6; }
+
+/* Navbar */
+.navbar {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 20px 8%; position: sticky; top: 0; background: rgba(255,255,255,0.8);
+    backdrop-filter: blur(10px); z-index: 1000; transition: 0.3s;
+}
+.logo { font-weight: 700; font-size: 1.5rem; color: var(--primary); }
+.logo span { color: var(--accent); }
+.nav-links { display: flex; list-style: none; gap: 30px; }
+.nav-links a { text-decoration: none; color: var(--primary); font-weight: 500; }
+
+/* Hero Section */
+.hero { padding: 100px 8%; display: flex; align-items: center; min-height: 80vh; }
+.hero-content { flex: 1; }
+.badge { background: #e6fcf5; color: var(--accent); padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; }
+.hero h1 { font-size: 3.5rem; color: var(--primary); line-height: 1.2; margin: 20px 0; }
+.hero p { font-size: 1.2rem; margin-bottom: 30px; max-width: 500px; }
+
+/* Buttons */
+.btn { padding: 12px 25px; border-radius: 8px; text-decoration: none; font-weight: 600; transition: 0.3s; display: inline-block; border: none; cursor: pointer; }
+.btn-primary { background: var(--accent); color: white; }
+.btn-primary:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0, 209, 178, 0.2); }
+.btn-secondary { background: transparent; color: var(--primary); margin-left: 15px; border: 1px solid #ddd; }
+
+/* Cards */
+.product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 50px; }
+.card { background: var(--white); padding: 40px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: 0.3s; }
+.card:hover { transform: translateY(-10px); border: 1px solid var(--accent); }
+.card h3 { color: var(--primary); margin: 15px 0; }
+.card ul { list-style: none; margin-top: 15px; font-size: 0.9rem; }
+
+/* Contact Section */
+.contact { padding: 80px 8%; text-align: center; }
+.contact-card { background: var(--primary); color: white; padding: 60px; border-radius: 24px; }
+#demo-form { display: flex; justify-content: center; gap: 10px; margin-top: 30px; flex-wrap: wrap; }
+#demo-form input { padding: 15px; border-radius: 8px; border: none; width: 250px; }
+
+/* Dashboard Preview Styling */
+.dashboard-preview { padding: 100px 8%; background: #fbfcfe; }
+.split-view { display: flex; align-items: center; gap: 60px; }
+.text-side { flex: 1; }
+.visual-side { flex: 1.2; position: relative; }
+
+.feature-item { display: flex; gap: 15px; margin-top: 20px; align-items: flex-start; }
+.dot { width: 10px; height: 10px; background: var(--accent); border-radius: 50%; margin-top: 8px; }
+
+/* The "App Window" Effect */
+.app-window {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 40px 100px rgba(0,0,0,0.1);
+    overflow: hidden;
+    border: 1px solid #e1e8ed;
+}
+.window-header { 
+    background: #f5f8fa; padding: 12px 20px; 
+    display: flex; align-items: center; gap: 20px;
+}
+.circles span { 
+    height: 8px; width: 8px; border-radius: 50%; background: #ddd; 
+    display: inline-block; margin-right: 5px; 
+}
+.search-bar { 
+    background: white; padding: 5px 15px; border-radius: 4px; 
+    font-size: 0.7rem; color: #999; flex-grow: 1; 
+}
+.window-content { padding: 30px; }
+.stat-card { background: var(--bg-light); padding: 20px; border-radius: 10px; margin-bottom: 20px; }
+.progress-bar { height: 6px; background: #eee; border-radius: 10px; margin-top: 10px; }
+.fill { height: 100%; background: var(--accent); border-radius: 10px; }
+
+.tag { padding: 4px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: bold; }
+.paid { background: #e6fcf5; color: #0ca678; }
+.pending { background: #fff4e6; color: #f08c00; }
+
+/* POS Section Specifics */
+.pos-section { padding: 100px 8%; background: #ffffff; }
+
+.reverse { flex-direction: row-reverse; }
+
+.screenshot-frame {
+    background: #1a1f26; /* Matches your POS sidebar color */
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 50px 100px rgba(0,0,0,0.15);
+    border: 8px solid #2d3436;
+    position: relative;
+    overflow: hidden;
+}
+
+.pos-img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.pos-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.pos-chip {
+    background: #f0f4f8;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--primary);
+    border: 1px solid #e1e8ed;
+}
+
+.local-trust {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    font-size: 0.9rem;
+}
+
+.local-trust span {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+/* Responsive adjustment */
+@media (max-width: 968px) {
+    .split-view.reverse { flex-direction: column; }
+    .pos-features { grid-template-columns: 1fr; }
+}
+
+.ecom-section { padding: 100px 8%; background: #f8fafc; }
+.section-header { text-align: center; margin-bottom: 60px; }
+
+.ecom-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 24px;
+}
+
+.ecom-main-card {
+    grid-row: span 2;
+    background: white;
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.04);
+}
+
+.ecom-side-card {
+    background: white;
+    padding: 30px;
+    border-radius: 24px;
+    border: 1px solid #edf2f7;
+    transition: 0.3s;
+}
+
+.ecom-side-card:hover { border-color: var(--accent); transform: scale(1.02); }
+
+/* Storefront Preview Styling */
+.ecom-browser-ui { border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; }
+.browser-tab { background: #e2e8f0; padding: 10px 20px; font-size: 0.75rem; font-weight: bold; }
+.store-preview { display: flex; gap: 20px; padding: 20px; background: #fff; }
+
+.ecom-item { flex: 1; border: 1px solid #eee; border-radius: 8px; padding: 10px; text-align: center; }
+.blue-placeholder { 
+    background: #2b7fff; color: white; height: 120px; 
+    display: flex; align-items: center; justify-content: center;
+    font-weight: bold; border-radius: 4px; margin-bottom: 10px;
+}
+.btn-cart { 
+    background: #2b7fff; color: white; border: none; 
+    padding: 8px 15px; border-radius: 4px; font-size: 0.8rem; cursor: pointer;
+}
+/* About Grid */
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; padding: 80px 0; }
+.vision-card { background: var(--primary); color: white; padding: 50px; border-radius: 30px; position: relative; }
+.vision-card::after { content: ''; position: absolute; top: -20px; right: -20px; width: 100px; height: 100px; background: var(--accent); opacity: 0.1; border-radius: 50%; }
+
+/* Contact Wrapper */
+.contact-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; background: white; padding: 40px; border-radius: 24px; box-shadow: 0 20px 60px rgba(0,0,0,0.05); }
+.info-links { margin-top: 30px; display: flex; flex-direction: column; gap: 20px; }
+.info-item { text-decoration: none; color: var(--primary); font-weight: 600; display: flex; align-items: center; gap: 15px; font-size: 1.1rem; }
+.whatsapp-btn { color: #25D366; }
+
+.contact-form-card { background: #f8fafc; padding: 30px; border-radius: 16px; }
+.form-group { margin-bottom: 20px; }
+.form-group label { display: block; margin-bottom: 8px; font-weight: 600; font-size: 0.9rem; }
+.form-group input, .form-group select { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; }
+.w-100 { width: 100%; margin-top: 10px; }
+
+/* Why Us Styling */
+.why-us { padding: 100px 8%; background: #ffffff; }
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.feature-card {
+    padding: 40px 30px;
+    background: #f8fafc;
+    border-radius: 20px;
+    transition: all 0.4s ease;
+    border: 1px solid transparent;
+}
+
+.feature-card:hover {
+    background: #ffffff;
+    border-color: var(--accent);
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+}
+
+.f-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.feature-card h3 {
+    color: var(--primary);
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+}
+
+.feature-card p {
+    font-size: 0.95rem;
+    color: var(--text-main);
+}
