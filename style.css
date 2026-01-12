@@ -241,7 +241,10 @@ body { font-family: 'Inter', sans-serif; color: var(--text-main); background: va
     font-size: 0.95rem;
     color: var(--text-main);
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 817e02d6733b016fd3f2c2ed63440b226e251f35
 /* --- RESPONSIVE OVERRIDES --- */
 
 /* Mobile Menu Toggle - Hidden on Desktop */
@@ -314,6 +317,7 @@ body { font-family: 'Inter', sans-serif; color: var(--text-main); background: va
     .card, .contact-card { padding: 30px 20px; }
     .ecom-main-card { padding: 20px; }
     .store-preview { flex-direction: column; }
+<<<<<<< HEAD
 } 
 /* --- Ultra-POS Specific Styles --- */
 .ultra-bg {
