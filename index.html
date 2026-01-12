@@ -11,16 +11,24 @@
 
     <nav class="navbar">
         <div class="logo">NextGen<span>Systems</span></div>
+        
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
         <ul class="nav-links">
             <li><a href="#products">Products</a></li>
+            <li><a href="#ultra-pos">Ultra-POS</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#why">Why Us</a></li>
         </ul>
-        <a href="#contact" class="btn btn-primary">Request Demo</a>
+        <a href="#contact" class="btn btn-primary nav-btn">Request Demo</a>
     </nav>
 
     <header class="hero">
-        <div class="container">
+        <div class="container hero-grid">
             <div class="hero-content">
                 <span class="badge">Future-Ready Technology</span>
                 <h1>Smart Software Solutions for Modern Schools & Businesses</h1>
@@ -121,18 +129,64 @@
                 <div class="text-side">
                     <span class="badge accent-bg">Retail & Hospitality</span>
                     <h2>NextGen POS: Built for Speed</h2>
-                    <p>From local cafes to busy retail stores, our POS simplifies your checkout process. Manage inventory, track table services, and sync accounting—all in one place.</p>
+                    <p>From local cafes to busy retail stores, our POS simplifies your checkout process.</p>
                     
                     <div class="pos-features">
-                        <div class="pos-chip">📋 Menu & Sales Management</div>
-                        <div class="pos-chip">🍽️ Table & Reservation Tracking</div>
-                        <div class="pos-chip">🚚 Delivery Order Sync</div>
-                        <div class="pos-chip">💰 Real-time Accounting</div>
+                        <div class="pos-chip">📋 Menu & Sales</div>
+                        <div class="pos-chip">🍽️ Table Tracking</div>
+                        <div class="pos-chip">🚚 Delivery Sync</div>
+                        <div class="pos-chip">💰 Accounting</div>
                     </div>
     
                     <div class="local-trust">
                         <strong>Optimized for:</strong> 
-                        <span>KSh Currency</span> • <span>M-Pesa Integration</span> • <span>Offline Mode</span>
+                        <span>KSh Currency</span> • <span>M-Pesa Integration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ultra-pos" class="pos-section ultra-bg">
+        <div class="container">
+            <div class="section-header" style="text-align:center; margin-bottom: 50px;">
+                <span class="badge">Advanced Retail Tech</span>
+                <h2>Ultra-POS v1.0: Enterprise Performance</h2>
+                <p>A high-speed terminal designed for supermarkets and large retail chains.</p>
+            </div>
+    
+            <div class="split-view">
+                <div class="visual-side">
+                    <div class="screenshot-frame enterprise-frame">
+                        <img src="image 12.jpeg" alt="Ultra-POS Admin Panel" class="pos-img">
+                        <div class="caption">Real-time Business Intelligence Dashboard</div>
+                    </div>
+                </div>
+                <div class="text-side">
+                    <h3>Data-Driven Decisions</h3>
+                    <p>Gain complete visibility into your business with our built-in Intelligence Overview.</p>
+                    <ul class="pos-list" style="list-style:none; padding:0;">
+                        <li><strong>🚀 Profit Analysis:</strong> Track Net Profit and Lifetime Revenue instantly.</li>
+                        <li><strong>🚀 Inventory Logs:</strong> Automated stock auditing and staff performance tracking.</li>
+                        <li><strong>🚀 Performance Metrics:</strong> Identify top-selling products at a glance.</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="split-view reverse" style="margin-top: 50px;">
+                <div class="visual-side">
+                    <div class="screenshot-frame enterprise-frame">
+                        <img src="image 13.jpeg" alt="Ultra-POS Cashier" class="pos-img">
+                    </div>
+                </div>
+                <div class="text-side">
+                    <h3>Lightning Fast Checkout</h3>
+                    <p>Designed for high-volume environments where every second counts.</p>
+                    <div class="pos-features">
+                        <div class="pos-chip">⌨️ Keyboard Shortcuts</div>
+                        <div class="pos-chip">🔍 Barcode Ready</div>
+                        <div class="pos-chip">🧾 Auto VAT Calc</div>
+                        <div class="pos-chip">📊 Analytics Access</div>
                     </div>
                 </div>
             </div>
@@ -141,7 +195,7 @@
 
     <section id="ecommerce" class="ecom-section">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" style="text-align:center; margin-bottom: 50px;">
                 <span class="badge">NextGen E-Comm</span>
                 <h2>Sell Everywhere, Manage in One Place</h2>
                 <p>Your online store and physical shop share one brain. Inventory updates automatically across both platforms.</p>
@@ -153,34 +207,36 @@
                         <div class="browser-tab">NextGen Storefront</div>
                         <div class="store-preview">
                             <div class="ecom-item">
-                                <div class="item-img blue-placeholder">Nokia C30</div>
-                                <div class="item-info">
+                                <div class="blue-placeholder" style="height:100px; background:#00D1B2; color:white; display:flex; align-items:center; justify-content:center; border-radius:8px;">Nokia C30</div>
+                                <div class="item-info" style="padding-top:10px;">
                                     <h4>Nokia C30</h4>
-                                    <span class="price">KSh 20,000</span>
-                                    <button class="btn-cart">Add to Cart</button>
+                                    <span class="price">KSh 20,000</span><br>
+                                    <button class="btn-cart" style="margin-top:5px;">Add to Cart</button>
                                 </div>
                             </div>
                             <div class="ecom-item">
-                                <div class="item-img blue-placeholder">Sugar</div>
-                                <div class="item-info">
+                                <div class="blue-placeholder" style="height:100px; background:#00D1B2; color:white; display:flex; align-items:center; justify-content:center; border-radius:8px;">Sugar</div>
+                                <div class="item-info" style="padding-top:10px;">
                                     <h4>Premium Sugar</h4>
-                                    <span class="price">KSh 100</span>
-                                    <button class="btn-cart">Add to Cart</button>
+                                    <span class="price">KSh 100</span><br>
+                                    <button class="btn-cart" style="margin-top:5px;">Add to Cart</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-    
-                <div class="ecom-side-card">
-                    <div class="icon-box">🔍</div>
-                    <h4>Smart Filtering</h4>
-                    <p>Allow customers to find what they need instantly by category.</p>
-                </div>
-                <div class="ecom-side-card">
-                    <div class="icon-box">💳</div>
-                    <h4>Checkout Ready</h4>
-                    <p>Integrated with M-Pesa and Card payments for seamless Kenyan trade.</p>
+                
+                <div class="ecom-side-column">
+                    <div class="ecom-side-card" style="margin-bottom:20px;">
+                        <div class="icon-box">🔍</div>
+                        <h4>Smart Filtering</h4>
+                        <p>Allow customers to find what they need instantly by category.</p>
+                    </div>
+                    <div class="ecom-side-card">
+                        <div class="icon-box">💳</div>
+                        <h4>Checkout Ready</h4>
+                        <p>Integrated with M-Pesa and Card payments for seamless Kenyan trade.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -192,18 +248,18 @@
                 <div class="about-text">
                     <span class="badge">Our Story</span>
                     <h2>Digitalizing Operations Through Simple, Powerful Technology</h2>
-                    <p>NextGen Systems Limited is a Kenyan-founded tech company dedicated to solving the unique challenges faced by local schools and businesses. We believe that professional, world-class software shouldn't be complicated or unaffordable.</p>
+                    <p>NextGen Systems Limited is a Kenyan-founded tech company dedicated to solving the unique challenges faced by local schools and businesses.</p>
                     
                     <div class="values-list">
-                        <div class="value-item"><strong>Innovation:</strong> Building tools for the future of Kenyan trade.</div>
-                        <div class="value-item"><strong>Integrity:</strong> Your data is secure, private, and always yours.</div>
-                        <div class="value-item"><strong>Customer Focus:</strong> Local support that understands your business.</div>
+                        <div class="value-item"><strong>Innovation:</strong> Tools for the future of Kenyan trade.</div>
+                        <div class="value-item"><strong>Integrity:</strong> Your data is secure and private.</div>
+                        <div class="value-item"><strong>Customer Focus:</strong> Local support that understands you.</div>
                     </div>
                 </div>
                 <div class="vision-box">
                     <div class="vision-card">
                         <h3>Our Vision</h3>
-                        <p>To become the leading provider of smart software solutions across the African continent, empowering every organization to transition into the digital age.</p>
+                        <p>To become the leading provider of smart software solutions across Africa, empowering organizations to transition into the digital age.</p>
                     </div>
                 </div>
             </div>
@@ -215,21 +271,11 @@
             <div class="contact-wrapper">
                 <div class="contact-info">
                     <h2>Let’s build your digital future</h2>
-                    <p>Have a question or want a live demo of the POS or School System? Reach out to us through any of these channels.</p>
-                    
+                    <p>Reach out to us through any of these channels for a live demo.</p>
                     <div class="info-links">
-                        <a href="mailto:pinidymwendia8@gmail.com" class="info-item">
-                            <span>📧</span> pinidymwendia8@gmail.com
-                        </a>
-                        <a href="tel:254741189878" class="info-item">
-                            <span>📞</span> +254 741 189 878
-                        </a>
-                        <a href="https://wa.me/254741189878" class="info-item whatsapp-btn">
-                            <span>💬</span> Chat on WhatsApp
-                        </a>
-                        <a href="#" class="info-item">
-                            <span>👤</span> Facebook: mwithalie pinidy
-                        </a>
+                        <a href="mailto:pinidymwendia8@gmail.com" class="info-item">📧 pinidymwendia8@gmail.com</a>
+                        <a href="tel:254741189878" class="info-item">📞 +254 741 189 878</a>
+                        <a href="https://wa.me/254741189878" class="info-item whatsapp-btn">💬 Chat on WhatsApp</a>
                     </div>
                 </div>
     
@@ -243,7 +289,8 @@
                         <div class="form-group">
                             <label>Select System</label>
                             <select name="system_type">
-                                <option>NextGen POS System</option>
+                                <option>Ultra-POS v1.0</option>
+                                <option>NextGen Standard POS</option>
                                 <option>School Management System</option>
                                 <option>E-Commerce Storefront</option>
                             </select>
@@ -264,45 +311,48 @@
             <div class="section-title">
                 <span class="badge">The NextGen Advantage</span>
                 <h2>Built for the Kenyan Market</h2>
-                <p>We don't just sell software; we provide the foundation for your organization's growth.</p>
             </div>
-    
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="f-icon">🇰🇪</div>
                     <h3>Locally Optimized</h3>
-                    <p>Fully integrated with <strong>M-Pesa</strong> and KSh currency. Designed to handle local tax requirements and business workflows.</p>
+                    <p>Integrated with M-Pesa and KSh currency requirements.</p>
                 </div>
-    
                 <div class="feature-card">
                     <div class="f-icon">🛡️</div>
                     <h3>Secure & Reliable</h3>
-                    <p>Your data is encrypted and backed up daily on secure cloud servers. 99.9% uptime guaranteed for your peace of mind.</p>
+                    <p>Daily backups on secure cloud servers. 99.9% uptime.</p>
                 </div>
-    
                 <div class="feature-card">
                     <div class="f-icon">⚡</div>
-                    <h3>Affordable & Scalable</h3>
-                    <p>Start small with our basic POS and grow into a full E-commerce empire without changing platforms. Zero hidden fees.</p>
+                    <h3>Scalable</h3>
+                    <p>Start small and grow into a full empire without changing platforms.</p>
                 </div>
-    
                 <div class="feature-card">
                     <div class="f-icon">🎧</div>
-                    <h3>24/7 Local Support</h3>
-                    <p>Get instant help via WhatsApp, Phone, or Email from a team that understands your language and your business.</p>
+                    <h3>24/7 Support</h3>
+                    <p>Local help via WhatsApp, Phone, or Email anytime.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="trust-bar">
-        <div class="container">
+    <footer class="trust-bar">
+        <div class="container" style="text-align: center;">
             <p>Join 100+ Kenyan Businesses & Schools moving to the digital future. 
                <strong>Call us: 0741189878</strong>
             </p>
         </div>
-    </div>
+    </footer>
 
-    <script src="script.js"></script>
+    <script>
+        const menu = document.querySelector('#mobile-menu');
+        const menuLinks = document.querySelector('.nav-links');
+
+        menu.addEventListener('click', () => {
+            menu.classList.toggle('active');
+            menuLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
