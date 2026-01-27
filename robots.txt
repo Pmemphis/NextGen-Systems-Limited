@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pmemphis.github.io/NextGen-Systems-Limited/sitemap.xml
