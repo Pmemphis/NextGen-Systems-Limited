@@ -593,3 +593,7 @@ body {
         justify-content: center;
     }
 }
+.logo {
+    height: 50px;
+    width: auto;
+}
