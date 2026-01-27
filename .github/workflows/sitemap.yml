@@ -1,0 +1,8 @@
+# Create the file
+touch sitemap.xml
+# (Paste the XML code from Option 1 into the file and save it)
+
+# Push to GitHub
+git add sitemap.xml
+git commit -m "Add manual sitemap for SEO"
+git push origin master
