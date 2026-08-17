@@ -1,8 +1,26 @@
-# Create the file
-touch sitemap.xml
-# (Paste the XML code from Option 1 into the file and save it)
+name: Update sitemap
 
-# Push to GitHub
-git add sitemap.xml
-git commit -m "Add manual sitemap for SEO"
-git push origin master
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "18 2 * * 1"
+
+permissions:
+  contents: write
+
+jobs:
+  update-sitemap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update last modified date
+        run: |
+          today=$(date -u +%F)
+          sed -i "s#<lastmod>[^<]*</lastmod>#<lastmod>${today}</lastmod>#" sitemap.xml
+      - name: Commit sitemap update
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add sitemap.xml
+          git diff --cached --quiet || git commit -m "chore: update sitemap date"
+          git push
