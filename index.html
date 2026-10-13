@@ -27,15 +27,16 @@
   <header class="site-header">
     <nav class="navbar container" aria-label="Main navigation">
       <a href="#home" class="brand" aria-label="NextGen Systems Limited home"><img src="assets/logo.png" alt="NextGen Systems Limited"></a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu"><span></span><span></span><span></span><span class="sr-only">Open menu</span></button>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Open navigation"><span></span><span></span><span></span><span class="sr-only">Open navigation</span></button>
       <ul class="nav-links" id="primary-menu">
-        <li><a href="#home">Home</a></li><li><a href="#about">About</a></li>
-        <li class="has-menu"><button class="menu-link" type="button" aria-expanded="false">Solutions <span aria-hidden="true">⌄</span></button><ul class="sub-menu"><li><a href="#school-solutions">School management systems</a></li><li><a href="#student-mis">Student MIS</a></li><li><a href="#cbc-mis">CBC MIS</a></li><li><a href="#ultrapos">NextGen UltraPOS</a></li><li><a href="#business-solutions">Business & inventory systems</a></li><li><a href="#services">Custom software & automation</a></li></ul></li>
-        <li><a href="#products">Products</a></li><li><a href="#services">Services</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li>
-        <li class="mobile-nav-cta"><a class="btn" href="#contact">Request a demo</a></li>
+        <li><a href="#home">Home</a></li>
+        <li class="has-menu"><button class="menu-link" type="button" aria-expanded="false" aria-controls="product-menu">Products <span class="chevron" aria-hidden="true">⌄</span></button><ul class="sub-menu" id="product-menu"><li class="nav-group-label">Education technology</li><li><a href="#school-solutions">School management system</a></li><li><a href="#student-mis">Student MIS</a></li><li><a href="#cbc-mis">CBC MIS</a></li><li class="nav-group-label">Business & retail</li><li><a href="#ultrapos">NextGen UltraPOS</a></li><li><a href="#business-solutions">Inventory & business management</a></li><li class="nav-group-label">Digital solutions</li><li><a href="#services">E-commerce & custom software</a></li></ul></li>
+        <li><a href="#solutions">Solutions</a></li><li><a href="#services">Services</a></li><li><a href="#projects">Projects</a></li><li><a href="#about">About us</a></li><li><a href="#contact">Contact</a></li>
+        <li class="mobile-nav-cta"><a class="btn" href="#contact">Request a demo</a><a class="mobile-whatsapp" href="https://wa.me/254741189878?text=Hello%20NextGen%20Systems%20Limited.%20I%20would%20like%20to%20learn%20more%20about%20your%20software%20solutions%20and%20request%20a%20demonstration." target="_blank" rel="noopener">Chat on WhatsApp <span aria-hidden="true">↗</span></a></li>
       </ul>
       <a href="#contact" class="btn btn-small nav-cta">Request a demo</a>
     </nav>
+    <button class="nav-backdrop" type="button" aria-label="Close navigation" tabindex="-1"></button>
   </header>
   <main id="main-content">
     <section id="home" class="hero">
