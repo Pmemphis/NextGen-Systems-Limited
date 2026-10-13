@@ -2,7 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://pmemphis.github.io/NextGen-Systems-Limited/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://pmemphis.github.io/NextGen-Systems-Limited/privacy.html</loc>
+    <lastmod>2026-10-13</lastmod>
+    <priority>0.40</priority>
+  </url>
+  <url>
+    <loc>https://pmemphis.github.io/NextGen-Systems-Limited/terms.html</loc>
+    <lastmod>2026-10-13</lastmod>
+    <priority>0.40</priority>
   </url>
   </urlset>
